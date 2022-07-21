@@ -10,7 +10,7 @@ const CreateBlog = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    axios.post('http://localhost:5000/blog', formData, {
+    axios.post('https://gossipgirlapp.herokuapp.com/blog', formData, {
         headers: {
           'x-auth-token': localStorage.getItem("userToken")
         }
