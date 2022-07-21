@@ -19,7 +19,7 @@ const RegisterForm = (props) => {
     e.preventDefault()
     console.log(formData)
 
-    axios.post('https://gossipgirlapp.herokuapp.com/user', formData)
+    axios.post('https://gossipgirl-blog.herokuapp.com/user', formData)
     .then(res => {
         console.log(res.data)
 

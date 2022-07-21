@@ -9,7 +9,7 @@ const UpdateBlog = (props) => {
 
   useEffect(() => {
     axios
-      .get(`https://gossipgirlapp.herokuapp.com/blog/${id}`, {
+      .get(`https://gossipgirl-blog.herokuapp.com/blog/${id}`, {
         headers: {
           "x-auth-token": localStorage.getItem("userToken"),
         },
@@ -23,7 +23,7 @@ const UpdateBlog = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.put(`https://gossipgirlapp.herokuapp.com/blog/${id}`, blog, {
+    axios.put(`https://gossipgirl-blog.herokuapp.com/blog/${id}`, blog, {
         headers: {
           'x-auth-token': localStorage.getItem("userToken")
         }

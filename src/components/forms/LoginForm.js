@@ -17,7 +17,7 @@ const LoginForm = (props) => {
     e.preventDefault();
     console.log(formData);
 
-    axios.post("https://gossipgirlapp.herokuapp.com/auth", formData).then((res) => {
+    axios.post("https://gossipgirl-blog.herokuapp.com/auth", formData).then((res) => {
       console.log(res.data);
 
       if (res.data.token && res.data.user) {
